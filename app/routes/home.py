@@ -23,6 +23,7 @@ def login():
     # not logged in yet
     if session.get("loggedIn") is None:
         return render_template("login.html")
+        
     return redirect("/dashboard")
 
 
